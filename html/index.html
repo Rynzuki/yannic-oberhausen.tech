@@ -9,7 +9,6 @@
 </head>
 <body>
     <div class="landing-page">
-        <div class="gradient"></div>
         <ul class="inter-light">
             <li>
                 <a href="https://github.com/Rynzuki">GitHub</a>
@@ -25,6 +24,7 @@
             <h1 class="inter-semibold">Yannic Oberhausen</h1>
             <h2 class="inter-light">Software Developer</h2>
         </div>
+        <div class="gradient"></div>
     </div>
     <style>
         body {
@@ -70,6 +70,7 @@
 
         .landing-page ul {
             z-index: 100;
+            width: 300px;
             position: absolute;
             list-style-type: none;
             margin: 0;
@@ -77,6 +78,7 @@
             right: 75px;
             top: 50px;
             display: flex;
+            justify-content: end;
             gap: 35px;
         }
 
@@ -127,10 +129,8 @@
 
         @media screen and (max-width: 1200px) {
             .landing-page ul {
-                position: static;
-                display: flex;
                 justify-content: center;
-                padding-top: 50px;
+                right: calc(50vw - 300px / 2);
             }
 
             .header-container {
