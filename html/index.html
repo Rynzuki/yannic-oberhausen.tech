@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yannic Oberhausen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -54,18 +55,8 @@
 
         .landing-page {
             height: 100vh;
-            background-color: black;
-        }
-
-        .landing-page .gradient {
-            position: absolute;
-            z-index: 10;
-            top: 0;
-            left: 0;
             width: 100vw;
-            height: 100vh;
-            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #3BC65A);
-            opacity: 7.5%;
+            background-color: black;
         }
 
         .landing-page ul {
@@ -142,8 +133,34 @@
             }
 
             .header-container h2 {
+                font-size: 2em;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .header-container {
+                left: 25px;
+                bottom: 75px;
+            }
+
+            .header-container h1 {
+                font-size: 3rem;
+            }
+
+            .header-container h2 {
                 font-size: 2rem;
             }
+        }
+
+        .landing-page .gradient {
+            position: absolute;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 75%, #3BC65A);
+            opacity: 15%;
         }
     </style>
 </body>
